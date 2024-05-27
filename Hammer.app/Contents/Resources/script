@@ -1,0 +1,5 @@
+#!/bin/bash
+cd /
+ABSPATH="$(cd "$(dirname "$0")" && pwd)"
+cd "$ABSPATH"
+java -Dsun.java2d.uiScale.enabled=false -Dsun.java2d.uiScale=1.0 -jar Hammer.jar
